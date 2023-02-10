@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>No Google</title>
+    <link type="text/css" href="{{ url_for('static', filename='styles.css')}}" rel="stylesheet" />
+</head>
+<body>
+<table>
+    <tr><td>
+        <form name="search_form" action="/nogoogle.com/book" method="post" target="file">
+            <table>
+                <tr>
+                    <td>No Google</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Введите текст для поиска</td>
+                    <td class="col1"><input type="text" name="txt">></td>
+                    <td><input type="submit" value="Найти"></td>
+                </tr>
+            </table>
+        </form>
+    </td></tr>
+    <tr>
+        <td>Расположите файлы кторые хотите добавить в поисковую систему в папку "Input", после чего запустите файл scan.py. Файлы добавяться в поисковую систему,
+        и переместяться в папку "inuse". После чего можете искать нужную вам информацию в ситеме.</td>
+        <td></td>
+    </tr>
+    <tr><td>
+        <table class="tab2h">
+            <tr>
+                <td>
+                    <b>Текст найден в следующих документах</b>
+                </td>
+                <td>
+                    <b>Подходящий текст</b>
+                </td>
+            </tr>
+            <tr>
+                <td ><div class="box"><iframe width="100%" name="file"></iframe></div></td>
+                <td  class="col1"><div class="box"><iframe width="100%" name="text"></iframe></div></td>
+            </tr>
+        </table>
+    </td></tr>
+</table>
+</body>
+</html>
